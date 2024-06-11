@@ -27,5 +27,3 @@ Throughout the development process, I encountered challenges such as ensuring cr
 ## Future Iterations:
 
 I will be expanding this portfolio website each time I add a project to my GitHub account or refining existing features. Future iterations may include integrating exploring advanced JavaScript functionalities to further enhance user interaction.
-
-
