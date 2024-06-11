@@ -14,11 +14,11 @@ Welcome to my personal portfolio website! Developed after completing a System De
 
 ## Technologies Used:
 
--**_HTML_**
--**_CSS_**
--**_JavaScript_**
--**_Git for version control_**
--**_Visual Studio Code as my IDE_**
+- **_HTML_**
+- **_CSS_**
+- **_JavaScript_**
+- **_Git for version control_**
+- **_Visual Studio Code as my IDE_**
 
 ## Challenges and Learnings:
 
