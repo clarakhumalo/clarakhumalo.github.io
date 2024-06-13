@@ -92,6 +92,29 @@ img{
   font-size: 5vw;
   position: absolute;
   top: 15%;
+  gap: 0; 
+  display: flex;
+}
+
+.introduction h1 span {
+  --colorA:#80589e;
+  --colorB:#ae7de3;
+  --colorC:rgb(158, 98, 222);
+  animation-name:changeColor;
+  animation-duration:var(--duration);
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes changeColor{
+  from {
+    color: var(--colorA);
+  }to{
+    color: var(--colorB);
+  }
+  to{
+    color: var(--colorC);
+  }
 }
 
 .introduction p {
@@ -114,13 +137,11 @@ img{
 .skill1, .skill2, .skill3, .skill4{
     background-color: rgb(87, 10, 159); 
     color: rgb(158, 77, 235);
-
     border-radius: 5;
     border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
     border-width: 5px;
     border-style: solid;
-
-    padding: 2vh 2vw;
+    padding: 1vh 1vw;
     font-size: 3vw;
 }
 
@@ -128,9 +149,11 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  top: 50%;
+  width: 70%;
+  height: 50%;
+  margin-top: 0.1%;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .skill1, .skill2 {
@@ -141,50 +164,34 @@ img{
   margin-left: auto;
 }
 .skill1:hover{
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
   font-size: 4vw;
 }
 .skill2:hover{
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
   font-size: 4vw;
 }
 .skill3:hover{
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
   font-size: 4vw;
 }
 .skill4:hover{
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
   font-size: 4vw;
 }
 
-/* .timeline-table{
-  width: 80vw;
-  height: 70vh;
-  margin-top: 5%;
-  margin-right: 10%;
-  margin-left: 10%;
-  border-radius: 5;
-  border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
-  border-width: 5px;
-  border-style: solid;
-  color: rgb(178, 115, 238);
-  background-color: #570976;	
-  display: flex;
-  justify-content: center;
-  position: absolute; 
-} */
 
 .timeline{
   width: 80vw;
@@ -196,20 +203,30 @@ img{
   border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
   border-width: 5px;
   border-style: solid;
-  color: rgb(178, 115, 238);
+  color:#bc96e4;
   background-color: #570976;	
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute; 
-  border-spacing: 50px 0;
+  border-spacing: 2vw;
   font-size: 17px;
-  column-width: 500px;
-  column-gap: 70px;
+  border-collapse: separate;
+  border-spacing: 2vw 2vh;
 }
 
 th, td{
-  width: 30vw;
+  width: 80vw;
+  padding-top: 1vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+  text-align: left;
+}
+
+th{
+  font-size: 20px;
+  color: rgb(175, 99, 246);
 }
 
 .cloud {
@@ -222,7 +239,7 @@ th, td{
   border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
   border-width: 5px;
   border-style: solid; 
-  color: rgb(158, 77, 235);
+  color:#bc96e4;
   background-color: #570976;	
 }
 
@@ -277,6 +294,7 @@ th, td{
   border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
   border-width: 5px;
   border-style: solid;
+  color:#ae7de3;
 }
 
 .project-container{

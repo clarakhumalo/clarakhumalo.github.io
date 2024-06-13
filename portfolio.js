@@ -13,3 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
         starry_background.appendChild(star);
     }
 });
+
+// let welcome=document.querySelector("welcome");
+// function animateCharacters(element){
+//     let spanCharacters=element.querySelectorAll("span");
+//     for (let counter=0;counter<spanCharacters.length;counter++){
+//         let spanCharacter=spanCharacters[counter];
+//         let randomDuration=.2+Math.random() + 1;
+//         spanCharacter.style.setProperty("--duration", randomDuration+"s");
+//     }
+//     setInitialRandomColor(spanCharacters);
+//     welcome.addEventListener("animationiteration", changeColor, true);
+// }
+// animateCharacters(welcome);
