@@ -22,22 +22,42 @@
     <div class="introduction">
       <h1 class="welcome">
         <!-- <span></span> -->
-        <span>Wel</span>    
-        <span>come</span>
+        <span>W</span>    
+        <span>e</span>    
+        <span>l</span>    
+        <span>c</span>
+        <span>o</span>
+        <span>m</span>
+        <span>e</span>
         <span>&nbsp;</span>
-        <span>to</span>
+        <span>t</span>
+        <span>o</span>
         <span>&nbsp;</span>
-        <span>my</span>
+        <span>m</span>
+        <span>y</span>
         <span>&nbsp;</span>
-        <span>Per</span>
-        <span>son</span>
-        <span>al</span>
+        <span>P</span>
+        <span>e</span>
+        <span>r</span>
+        <span>s</span>
+        <span>o</span>
+        <span>n</span>
+        <span>a</span>
+        <span>l</span>
         <span>&nbsp;</span>
-        <span>Web</span>
+        <span>W</span>
+        <span>e</span>
+        <span>b</span>
         <span>&nbsp;</span>
-        <span>Por</span>
-        <span>tfo</span>
-        <span>lio</span>
+        <span>P</span>
+        <span>o</span>
+        <span>r</span>
+        <span>t</span>
+        <span>f</span>
+        <span>o</span>
+        <span>l</span>
+        <span>i</span>
+        <span>o</span>
       </h1>
       <script>
         let welcome=document.querySelector(".welcome");
@@ -59,61 +79,94 @@
             let spanCharacter=spanCharacters[counter];
             spanCharacter.style.setProperty("--colorA","--colorB ");
             spanCharacter.style.setProperty("--colorB ","--colorC");
+            spanCharacter.style.setProperty("--colorC ","--colorD");
           }
         }
         function changeColor(event){
           let spanCharacter=event.target;
-
           let spanStyle=getComputedStyle(spanCharacter);
-          let finalColor=spanStyle.getPropertyValue("--colorC");
-          
-          spanCharacter.style.setProperty("--colorA","--colorB ");
-          spanCharacter.style.setProperty("--colorB ","--colorC");
-
+            spanCharacter.style.setProperty("--colorA","--colorB ");
+            spanCharacter.style.setProperty("--colorB ","--colorC");
+            spanCharacter.style.setProperty("--colorC ","--colorD");
         }
       </script>
       <br>
-      <p>My name is Clara, I recently graduated from an institution that trained me to<br>
-        work with both the front-end and back-end aspects of programming, as well as<br>
+      <p class="welcome-paragraph"><span>My</span><span>&nbsp;</span><span>name</span><span>&nbsp;</span><span>is</span><span>&nbsp;</span><span>Clara</span>, I recently graduated from an institution that trained me to
+        work with both the front-end and back-end aspects of programming, as well as
         many soft skills that are essential to being to stellar software developer.</p>
       <br>
+      <script>
+        let welcome_paragraph=document.querySelector(".welcome-paragraph");
+        function animateCharacters(element){
+            let spanCharacters=element.querySelectorAll("span");
+            
+            for (let counter=0;counter<spanCharacters.length;counter++){
+                let spanCharacter=spanCharacters[counter];
+                let randomDuration=.2+Math.random() + 1;
+                spanCharacter.style.setProperty("--duration", randomDuration+"s");
+            }
+            setInitialRandomColor(spanCharacters);
+            welcome_paragraph.addEventListener("animationiteration", changeColorParagraph, true);
+        }
+        animateCharacters(welcome_paragraph);
+
+        function setInitialRandomColor(spanCharacters){
+          for (let counter=0;counter<spanCharacters.length;counter++){
+            let spanCharacter=spanCharacters[counter];
+            spanCharacter.style.setProperty("--colorAP","--colorBP");
+            spanCharacter.style.setProperty("--colorBP","--colorCP");
+            spanCharacter.style.setProperty("--colorCP","--colorDP");
+          }
+        }
+        function changeColorParagraph(event){
+          let spanCharacter=event.target;
+          let spanStyle=getComputedStyle(spanCharacter);
+            spanCharacter.style.setProperty("--colorAP","--colorBP");
+            spanCharacter.style.setProperty("--colorBP","--colorCP");
+            spanCharacter.style.setProperty("--colorCP","--colorDP");
+        }
+      </script>
+
+<div class="skill-buttons" > 
+  <a href="python-projects/python-projects.html">
+    <button class="skill1">
+      Python<br>Projects
+    </button>
+  </a>
+  <a href="java-projects/java-projects.html">
+    <button class="skill2">
+      Java<br>Projects
+    </button>
+  </a>
+  
+  <a href="website-projects/web-projects.html">
+    <button class="skill3">
+      Web<br>Projects
+    </button >
+  </a>
+  
+  <a href="application-projects/application-projects.html">
+    <button class="skill4" >
+      Flutter<br>Apps
+    </button>
+  </a> 
+  <!-- <h1 class="category-name">
+    Programming
+    <br>
+    Languages
+  </h1> -->
+<!-- </div> -->
+</div>
+
+
+      <!-- My name is Clara, I recently graduated from an institution that trained me to<br>
+        work with both the front-end and back-end aspects of programming, as well as<br>
+        many soft skills that are essential to being to stellar software developer.</p>
+      <br> -->
     </div>
   </div>
 
-  <!-- <div class="slides"> -->
-    <span class="cloud-shape"></span>
-
-    <div class="skill-buttons" > 
-      <a href="python-projects/python-projects.html">
-        <button class="skill1">
-          Python<br>Projects
-        </button>
-      </a>
-      <a href="java-projects/java-projects.html">
-        <button class="skill2">
-          Java<br>Projects
-        </button>
-      </a>
-      
-      <a href="website-projects/web-projects.html">
-        <button class="skill3">
-          Web<br>Projects
-        </button >
-      </a>
-      
-      <a href="application-projects/application-projects.html">
-        <button class="skill4" >
-          Flutter<br>Apps
-        </button>
-      </a> 
-      <!-- <h1 class="category-name">
-        Programming
-        <br>
-        Languages
-      </h1> -->
-    <!-- </div> -->
-  </div>
-
+    
 
   </div>
   <script src="portfolio.js"></script>
