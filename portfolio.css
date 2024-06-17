@@ -1,26 +1,9 @@
-/* 
-DFD9E2
-C3ACCE
-89909F
-
-B298DC
-A663CC
-B8D0EB
-*/
 html,body{
   margin: 0;
   padding: 0;
-  /* nope */
-  /* font-family: 'Indie Flower'; */
-  /* font-family: 'Concert One'; */
   font-family: 'Amita';
   font-weight: bold;
   font-size: 1.7vw;
-  /* color: white; */
-  /* font-family: 'Rubik Moonrocks'; */
-  /* headers and nav */
-  /* font-family: 'Great Vibes'; */
-  /* font-family: 'Satisfy'; */
 }
 
 a { 
@@ -445,42 +428,6 @@ input[type=submit]:hover {
   height: 50vh;
 }
 
-/* .image-container{
-  border-radius: 5;
-  border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
-  border-width: 5px;
-  border-style: solid;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  padding: 10px;
-  background-color: #570976;
-  box-sizing: border-box;
-  transition: left 0.9s ease-in-out;
-} */
-
-/* .image-container {
-  height: 50vh;
-  width: 50vw;
-  border-radius: 5;
-  border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
-  border-width: 5px;
-  border-style: solid;
-  margin-left: 15vw;  
-  margin-right: 15vw;
-  margin-top: 0.5vh;  
-  opacity: 1;
-} */
-
-/* 
-.project-container:hover .image-container {
-  left: 0;
-  opacity: 1;
-} */
 
 .project-container-info {
   font-size: 15px;
@@ -496,11 +443,12 @@ input[type=submit]:hover {
     padding: 0;
   }
 
+  
   .nav-bar a {
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-    padding-right: 1.5vw;
-    padding-left: 1.5vw;
+    padding-top: 0.7vh;
+    padding-bottom: 0.7vh;
+    padding-right: 0.7vw;
+    padding-left: 0.7vw;
   }
 
   .introduction{
@@ -550,13 +498,6 @@ input[type=submit]:hover {
   .socials_and_contact{
     width: 82vw;
   }
-  /* .socials_and_contact_icons{ */
-    /* width: px; */
-    /* margin-left: 0; */
-  /* }  
-  .socials_and_contact_icons a{
-    width: 7px;
-  } */
 
   .contact_form{
     width: 57vw;
@@ -564,7 +505,9 @@ input[type=submit]:hover {
     margin-right: 3vw;
   }
 
-
+  .project-container img{
+    width: 70vw;
+  }
 }
 .fa {
   padding: 20px;
@@ -604,12 +547,3 @@ input[type=submit]:hover {
   background: #ffffff;
   color: rgb(0, 0, 0);
 }
-/**.category-name {
-  position: absolute;
-  font-size: 3vw;
-  font-weight: bold;
-}
-
-.category-name:hover{ 
-  font-size: 40px;
-}**/
