@@ -30,14 +30,21 @@ img{
   width: 50vw;
   height: 50vh;
 }
-
+hr{
+  height: 5px;
+  border: none;
+  background-color: #7c1586;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 2vh;
+  border-radius: 5%;
+}
 .nav-bar {
   float: right;
   font-size: 25px;
   border-radius: 5;
   margin-left:0 ;
   margin-top: 5vh;  
-  /* top: 20px; */
 }
 
 .nav-bar a {
@@ -93,16 +100,10 @@ img{
 
 .introduction{
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   position: absolute; 
-  /* color: #ae7de3; */
   color: white;
-
   background-color: rgb(87, 10, 159) ;  
   opacity: 0.8; 
-  /* color:#bc96e4;
-  background-color: #570976; */
   border-width: 5px;  
   border-radius: 5 ;
   border-style: solid; 
@@ -125,14 +126,6 @@ img{
 }
 
 .introduction h1 span {
-  /* --colorA:#702963;
-  --colorB:#483d8b;
-  --colorC:#663399;
-  --color:#4b0082; */
-  /* --colorA:#a967db;
-  --colorB: #892dec;
-  --colorC: #8d3acd;
-  --colorD:#633892; */
   --colorA:#ae7de3;
   --colorB: #8a4eca;
   --colorC: #9d51ef;
@@ -216,14 +209,8 @@ img{
   padding-left: 18px;
   font-size: 20px;
   border-radius: 10px;
-  /* border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 33% round; */
-  /* border-width: 5px; */
-  border: double 5px transparent;
-  background-image: linear-gradient(white,white),
-  linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5);
-  background-origin: border-box;
-  background-clip: content-box ,border-box;
-  /* border-style: solid; */
+  border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 33% round; 
+  border-width: 5px;
   background: #570976;	
 }
 
@@ -240,7 +227,6 @@ img{
 
 .skill1, .skill2, .skill3, .skill4{
     background-color: rgb(87, 10, 159); 
-    /* color: rgb(158, 77, 235); */
     border-radius: 5;
     border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
     border-width: 5px;
@@ -256,6 +242,13 @@ img{
   padding: 2vh 2vw 2vh 2vw;
   font-size: 2vw;
 }
+table,th,td{
+  border-color: rgb(87, 10, 159) ;    
+}
+th,td{
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
 
 .timeline{
   width: 80vw;
@@ -263,11 +256,9 @@ img{
   margin-top: 20vh;
   margin-right: 10vw;
   margin-left: 10vw;
-  border-radius: 5;
   border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
   border-width: 5px;
   border-style: solid;
-  /* color: #ae7de3; */
   color: white;
   background-color: rgb(87, 10, 159) ;  
   opacity: 0.8;   
@@ -275,13 +266,8 @@ img{
   justify-content: center;
   align-items: center;
   position: absolute; 
-  border-spacing: 2vw;
+  border-spacing: 1vw;
   font-size: 17px;
-  border-collapse: separate;
-  border-spacing: 2vw 2vh;
-  border-width: 5px;  
-  border-radius: 5 ;
-  border-style: solid; 
 }
 
 th, td{
@@ -293,9 +279,13 @@ th, td{
   text-align: left;
 }
 
+td{
+  background-color:  #630480;
+}
+
 th{
   font-size: 20px;
-  /* color: rgb(175, 99, 246); */
+  background-color: #7c1586;
 }
 
 .about {
@@ -317,12 +307,25 @@ th{
 
 .about h1{
   font-size: 4vw;
-  margin-top: 2%;
-  margin-left: 5%;
+  margin-top: 2vh;
+  margin-left: 5vw;
+  margin-bottom: 0px;
   /* color: rgb(175, 99, 246); */
   color: white;
-
 }
+
+.about hr{
+  width: 70vw;
+  height: 5px;
+  border: none;
+  background-color: #7c1586;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-left:5vw;
+  margin-bottom: 2vh;
+  border-radius: 5%;
+}
+
 
 .about ol{
   margin-top:2%;
@@ -332,8 +335,8 @@ th{
 
 .about p{
   margin-top: 2vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
   /* font-size: 1.7vw;*/
 }
 
@@ -380,10 +383,21 @@ th{
   margin-top: 5vh;
   margin-left: 7%;
 }
+.contact_form  h2{
+  margin-bottom: 0px;
+}
+.contact_form hr{
+  height: 5px;
+  border: none;
+  background-color: #7c1586;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 2vh;
+  border-radius: 5%;
+}
 .contact_form {
   width: 35%;  
-  margin-bottom: 2%;
-  /* color: #ae7de3; */
+  margin-bottom: 1vh;
 }
 
 .contact-inputs{
