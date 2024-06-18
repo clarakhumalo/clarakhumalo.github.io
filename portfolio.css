@@ -291,20 +291,17 @@ th{
 
 .about hr{
   width: 70vw;
-  /* height: 0.5vw; */
   margin-top: 0px;
   margin-left:5vw;
   margin-bottom: 2vh;
 }
 
 .about ol{
-  margin-top:2%;
   margin-right: 5%;
   margin-left: 5%;
 }
 
 .about p{
-  margin-top: 2vh;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -337,18 +334,16 @@ th{
   margin-top: 5vh;
   margin-left: 7%;
 }
+
 .contact_form  h2{
   margin-bottom: 0px;
 }
+
 .contact_form hr{
   background-color: #7c1586;
   margin-bottom: 2vh;  
-  /* border: none; */
-  /* background-color: #7c1586; */
-  /* margin-top: 0px;
-  margin-bottom: 2vh; */
-  /* border-radius: 30vw; */
 }
+
 .contact_form {
   width: 35%; 
   height: auto; 
@@ -369,7 +364,9 @@ input , textarea{
   padding: 1vh; 
   box-sizing: border-box; 
 } 
-
+label{
+  margin-left: 2vw;
+}
 textarea{
   height:10vh !important;
   resize:none;
@@ -428,12 +425,12 @@ input[type=submit]:hover {
     padding: 0;
   }
 
-  /* .nav-bar a {
-    padding-top: 0.7vh;
-    padding-bottom: 0.7vh;
-    padding-right: 0.7vw;
-    padding-left: 0.7vw;
-  } */
+  .nav-bar a {
+    padding-top: 3.3vh;
+    padding-bottom: 3.3vh;
+    padding-right: 3.3vw;
+    padding-left: 3.3vw;
+  }
 
   .introduction{
     height:70vh ;
@@ -470,16 +467,14 @@ input[type=submit]:hover {
     font-size: 4vw;
   }
 
-  .timeline{
-    font-size: 2.5vw;
-  }
   th{
     font-size: 3.5vw;
-    color: white;
   }
-
+  td{
+    font-size: 2vw;
+  }
   .project-container img{
-    width: 70vw;
+    width: 50vw;
   }
 }
 
