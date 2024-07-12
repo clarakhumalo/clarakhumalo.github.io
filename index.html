@@ -66,7 +66,7 @@
         <span>i</span>
         <span>o</span>
       </h1>
-      <!-- <script>
+      <script>
         let welcome=document.querySelector(".welcome");
         function animateCharacters(element){
             let spanCharacters=element.querySelectorAll("span");
@@ -96,7 +96,7 @@
             spanCharacter.style.setProperty("--colorB","--colorC");
             spanCharacter.style.setProperty("--colorC","--colorD");
         }
-      </script> -->
+      </script>
       <br>
 
       <p><span>My name is Clara,
@@ -108,44 +108,7 @@
           <a href="assets/Curriculum-Vitae-Clara-Khumalo.pdf" download>Download Resume</a>
       </button>
       <br>
-      <script>
-        let welcome_paragraph=document.querySelector(".welcome-paragraph");
-        // make each character in the html have a span element using js
-        // welcome_paragrap.forEach(element => {
-        //   element
-        //   let spanCharacters=element.querySelectorAll("span");
-        // });
-        function animateCharacters(element){
-            let spanCharacters=element.querySelectorAll("span");
-            
-            for (let counter=0;counter<spanCharacters.length;counter++){
-                let spanCharacter=spanCharacters[counter];
-                let randomDuration=.2+Math.random() + 1;
-                spanCharacter.style.setProperty("--paragraphDuration", randomDuration+"s");
-            }
-            setColorProcess(spanCharacters);
-            welcome_paragraph.addEventListener("animationiteration", changeColorParagraph, true);
-        }
-        // paragraphAnimationIteration
-        animateCharacters(welcome_paragraph);
-
-        function setColorProcess(spanCharacters){
-          for (let counter=0;counter<spanCharacters.length;counter++){
-            let spanCharacter=spanCharacters[counter];
-            spanCharacter.style.setProperty("--colorAP","--colorBP");
-            spanCharacter.style.setProperty("--colorBP","--colorCP");
-            spanCharacter.style.setProperty("--colorCP","--colorDP");
-          }
-        }
-        function changeColorParagraph(event){
-          let spanCharacter=event.target;
-          let spanStyle=getComputedStyle(spanCharacter);
-            spanCharacter.style.setProperty("--colorAP","--colorBP");
-            spanCharacter.style.setProperty("--colorBP","--colorCP");
-            spanCharacter.style.setProperty("--colorCP","--colorDP");
-        }
-      </script>
-
+      
 <div class="skill-buttons" id="gradient-border"> 
   <a href="python-projects/python-projects.html">
     <button class="skill1">
