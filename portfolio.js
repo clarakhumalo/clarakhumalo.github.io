@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var screenWidth= window.innerWidth;
     var screenHeight= window.innerHeight;
 
-    for (let i = 7000; i < 10000; i++) {
+    for (let i = 5000; i < 7000; i++) {
 
         const star = document.createElement('div');
         star.className = 'star';

@@ -1,89 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Information and Social Media</title>
-        <link rel="stylesheet" href="../portfolio.css">
-        <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
-        <!-- <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'> -->
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information and Social Media</title>
+    <link rel="stylesheet" href="../portfolio.css">
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <body>
-        <div class="starry_background" id="starry_background"></div>
-        <nav class="nav-bar">            
-            <a href="../index.html">Home</a>
-            <a href="../about/about.html">About</a>
-            <a href="../education-&-experience/education-&-experience.html">Education & Experience</a>
-            <a class="active" href="../contact-information/contact-info.html">Contact</a>
-        </nav>   
-        <!-- <div class="slides"> -->
-            <div class="socials_and_contact">
+<body>
+    <div class="starry_background" id="starry_background"></div>
+    <nav class="nav-bar">
+        <a href="../index.html">Home</a>
+        <a href="../about/about.html">About</a>
+        <a href="../education-&-experience/education-&-experience.html">Education & Experience</a>
+        <a class="active" href="../contact-information/contact-info.html">Contact</a>
+    </nav>
+    <div class="socials_and_contact">
+        <div class="contact_form">
+            <h2>Get in touch</h2>
+            <hr>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="cc395da8-16ab-4b2f-be57-f81bece795ca">
+                <label for="full-name">Full Name</label><br>
+                <input type="text" id="full-name" name="full-name" placeholder="e.g. John Doe" class="contact-inputs"
+                    required> <br>
 
-                <!-- 
-                <p>Linkedin: <a href="https://www.linkedin.com/in/clara-juana-khumalo-4b6082237/">Linkedin Profile</a><br>
-                <br>
-                Email: <a href="">clarakhumalo14@gmail.com</a><br>
-                <br>
-                Cellphone: <a href="tel:0665181511">Call 0665181511</a><br>
-                <br>
-                WhatsApp: <a href="https://wa.me/0665181511">Chat On WhatsApp (0665181511)</a><br>
-                <br>
-                GitHub: <a href="https://github.com/ClaraKhumalo">GitHub Profile</a><br>
-                <br>
-                Medium: </h1><a href="https://medium.com/@clarakhumalo14">Medium Profile</a> -->
-                <!-- </p> -->
-                <!-- <h1 class="social6">Medium:</h1><a href=""></a> -->
-                <!-- <p><h3 class="social1">Linkedin:<a href="www.linkedin.com/in/clara-juana-khumalo-4b6082237">Linkedin Profile</a></h3><br>
-                    <h3 class="social2">Email:<a href="">clarakhumalo14@gmail.com</a></h3><br>
-                    <h3 class="social3">Cellphone:<a href="">0665181511</a></h3><br>
-                    <h3 class="social4">WhatsApp:<a href="">0665181511</a></h3><br>
-                    <h3 class="social5">GitHub:<a href="https://github.com/ClaraKhumalo">GitHub Profile</a></h3><br></p> -->
-            
-                    <div class="contact_form">
-                        <h2>Get in touch</h2>
-                        <hr>
-                        <form action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="cc395da8-16ab-4b2f-be57-f81bece795ca">
-                            <label for="full-name">Full Name</label><br>
-                            <input type="text" id="full-name" name="full-name" placeholder="e.g. John Doe" class="contact-inputs" required> <br>
-        
-                            <label for="email-address">Your email Address</label><br>
-                            <input type="email" id="email-address" name="email-address" placeholder="e.g. johndoe@gmail.com" class="contact-inputs" required> <br>
-                            <label for="message">Message</label><br>
-                            <textarea id="message" name="message" class="contact-inputs" required></textarea> 
-        
-                            <input type="submit" value="Submit">
-                          </form>
-                        </div>
-                        <footer>
-                        <div class="socials_and_contact_icons">
-                            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/clara-juana-khumalo-4b6082237/" target="_blank">
-                            </a>
-                            <br>
-                            <a  class="fa fa-medium" href="https://medium.com/@clarakhumalo14" target="_blank">
-                            </a>
-                            <br>
-                            <a class="fa fa-github" href="https://github.com/ClaraKhumalo" target="_blank">
-                            </a>
-                            <br>
-                            <a class="fa fa-whatsapp" href="https://wa.me/0665181511" target="_blank">
-                            </a>
-                            <br>
-                            <a class="fa fa-envelope" href="mailto:clarakhumalo14@gmail.com" target="_blank">
-                            </a>
-                            <br>
-                            </a>
-                        </div>
-                    </footer>
+                <label for="email-address">Your email Address</label><br>
+                <input type="email" id="email-address" name="email-address" placeholder="e.g. johndoe@gmail.com"
+                    class="contact-inputs" required> <br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" class="contact-inputs" required></textarea>
 
-                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <footer>
+            <div class="socials_and_contact_icons">
+                <a class="fa fa-linkedin" href="https://www.linkedin.com/in/clara-juana-khumalo-4b6082237/"
+                    target="_blank">
+                </a>
+                <br>
+                <a class="fa fa-medium" href="https://medium.com/@clarakhumalo14" target="_blank">
+                </a>
+                <br>
+                <a class="fa fa-github" href="https://github.com/ClaraKhumalo" target="_blank">
+                </a>
+                <br>
+                <a class="fa fa-whatsapp" href="https://wa.me/0665181511" target="_blank">
+                </a>
+                <br>
+                <a class="fa fa-envelope" href="mailto:clarakhumalo14@gmail.com" target="_blank">
+                </a>
+                <br>
+                </a>
+            </div>
+        </footer>
 
-        <!-- </div> -->
-        <script src="../portfolio.js"></script>
-    </body>
+    </div>
+
+    <script src="../portfolio.js"></script>
+</body>
+
 </html>
