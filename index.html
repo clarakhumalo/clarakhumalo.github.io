@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,11 @@
   <link rel="stylesheet" href="portfolio.css">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
-  <!-- headers and nav -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'> -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'> -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Rubik Moonrocks' rel='stylesheet'> -->
-  <!-- nope -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'> -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'> -->
 </head>
 
 <body>
   <div class="starry_background" id="starry_background"></div>
-  <nav class="nav-bar" id="gradient-border">            
+  <nav class="nav-bar" id="gradient-border">
     <a class="active" href="index.html">Home</a>
     <a href="about/about.html">About</a>
     <a href="education-&-experience/education-&-experience.html">Education & Experience</a>
@@ -28,10 +22,9 @@
   <div class="slides">
     <div class="introduction">
       <h1 class="welcome">
-        <!-- <span></span> -->
-        <span>W</span>    
-        <span>e</span>    
-        <span>l</span>    
+        <span>W</span>
+        <span>e</span>
+        <span>l</span>
         <span>c</span>
         <span>o</span>
         <span>m</span>
@@ -67,104 +60,80 @@
         <span>o</span>
       </h1>
       <script>
-        let welcome=document.querySelector(".welcome");
-        function animateCharacters(element){
-            let spanCharacters=element.querySelectorAll("span");
-            
-            for (let counter=0;counter<spanCharacters.length;counter++){
-                let spanCharacter=spanCharacters[counter];
-                let randomDuration=.2+Math.random() + 1;
-                spanCharacter.style.setProperty("--duration", randomDuration+"s");
-            }
-            setColorProcess(spanCharacters);
-            welcome.addEventListener("animationiteration", changeColor, true);
+        let welcome = document.querySelector(".welcome");
+        function animateCharacters(element) {
+          let spanCharacters = element.querySelectorAll("span");
+
+          for (let counter = 0; counter < spanCharacters.length; counter++) {
+            let spanCharacter = spanCharacters[counter];
+            let randomDuration = .2 + Math.random() + 1;
+            spanCharacter.style.setProperty("--duration", randomDuration + "s");
+          }
+          setColorProcess(spanCharacters);
+          welcome.addEventListener("animationiteration", changeColor, true);
         }
         animateCharacters(welcome);
 
-        function setColorProcess(spanCharacters){
-          for (let counter=0;counter<spanCharacters.length;counter++){
-            let spanCharacter=spanCharacters[counter];
-            spanCharacter.style.setProperty("--colorA","--colorB ");
-            spanCharacter.style.setProperty("--colorB","--colorC");
-            spanCharacter.style.setProperty("--colorC","--colorD");
+        function setColorProcess(spanCharacters) {
+          for (let counter = 0; counter < spanCharacters.length; counter++) {
+            let spanCharacter = spanCharacters[counter];
+            spanCharacter.style.setProperty("--colorA", "--colorB ");
+            spanCharacter.style.setProperty("--colorB", "--colorC");
+            spanCharacter.style.setProperty("--colorC", "--colorD");
           }
         }
-        function changeColor(event){
-          let spanCharacter=event.target;
-          let spanStyle=getComputedStyle(spanCharacter);
-            spanCharacter.style.setProperty("--colorA","--colorB");
-            spanCharacter.style.setProperty("--colorB","--colorC");
-            spanCharacter.style.setProperty("--colorC","--colorD");
+        function changeColor(event) {
+          let spanCharacter = event.target;
+          let spanStyle = getComputedStyle(spanCharacter);
+          spanCharacter.style.setProperty("--colorA", "--colorB");
+          spanCharacter.style.setProperty("--colorB", "--colorC");
+          spanCharacter.style.setProperty("--colorC", "--colorD");
         }
       </script>
       <br>
 
       <p><span>My name is Clara,
-        I recently graduated from an institution that trained me to
-        work with both the front-end and back-end aspects of programming, as well as
-        many soft skills that are essential to being a stellar software developer.</span>
-        </p>
-        <button class="resume" id="rounded-border">
-          <a href="assets/Curriculum-Vitae-Clara-Khumalo.pdf" download>Download Resume</a>
+          I recently graduated from an institution that trained me to
+          work with both the front-end and back-end aspects of programming, as well as
+          many soft skills that are essential to being a stellar software developer.</span>
+      </p>
+      <button class="resume" id="rounded-border">
+        <a href="assets/Curriculum-Vitae-Clara-Khumalo.pdf" download>Download Resume</a>
       </button>
       <br>
-      
-<div class="skill-buttons" id="gradient-border"> 
-  <a href="python-projects/python-projects.html">
-    <button class="skill1">
-      Python<br>Projects
-    </button>
-  </a>
-  <a href="java-projects/java-projects.html">
-    <button class="skill2">
-      Java<br>Projects
-    </button>
-  </a>
-  
-  <a href="website-projects/web-projects.html">
-    <button class="skill3">
-      Web<br>Projects
-    </button >
-  </a>
-  
-  <a href="application-projects/application-projects.html">
-    <button class="skill4" >
-      Flutter<br>Apps
-    </button>
-  </a> 
-  <!-- <h1 class="category-name">
-    Programming
-    <br>
-    Languages
-  </h1> -->
-<!-- </div> -->
-</div>
 
+      <div class="skill-buttons" id="gradient-border">
+        <a href="python-projects/python-projects.html">
+          <button class="skill1">
+            Python<br>Projects
+          </button>
+        </a>
+        <a href="java-projects/java-projects.html">
+          <button class="skill2">
+            Java<br>Projects
+          </button>
+        </a>
 
-      <!-- My name is Clara, I recently graduated from an institution that trained me to<br>
-        work with both the front-end and back-end aspects of programming, as well as<br>
-        many soft skills that are essential to being to stellar software developer.</p>
-      <br> -->
+        <a href="website-projects/web-projects.html">
+          <button class="skill3">
+            Web<br>Projects
+          </button>
+        </a>
+
+        <a href="application-projects/application-projects.html">
+          <button class="skill4">
+            Flutter<br>Apps
+          </button>
+        </a>
+
+      </div>
     </div>
   </div>
 
-    
+
 
   </div>
   <script src="portfolio.js"></script>
 </body>
-</html>
 
-<!--<p class="welcome-paragraph"><span>My</span><span>&nbsp;</span><span>name</span><span>&nbsp;</span><span>is</span><span>&nbsp;</span><span>Clara,</span>
-  <span>&nbsp;</span><span>I</span><span>&nbsp;</span><span>recently</span><span>&nbsp;</span><span>graduated</span><span>&nbsp;</span>
-  <span>from</span><span>&nbsp;</span><span>an</span><span>&nbsp;</span><span>institution</span><span>&nbsp;</span><span>that</span><span>&nbsp;</span>
-  <span>trained</span><span>&nbsp;</span><span>me</span><span>&nbsp;</span><span>to</span><span>&nbsp;</span><span>work</span><span>&nbsp;</span>
-  <span>with</span><span>&nbsp;</span><span>both</span><span>&nbsp;</span><span>the</span><span>&nbsp;</span><span>front-end</span><span>&nbsp;</span>
-  <span>and</span><span>&nbsp;</span><span>back-end</span><span>&nbsp;</span><span>aspects</span><span>&nbsp;</span><span>of</span><span>&nbsp;</span>
-  <span>programming,</span><span>&nbsp;</span><span>as</span><span>&nbsp;</span><span>well</span><span>&nbsp;</span>
-  <span>as</span><span>&nbsp;</span><span>many</span><span>&nbsp;</span><span>soft</span><span>&nbsp;</span><span>skills</span><span>&nbsp;</span>
-  <span>and</span><span>&nbsp;</span><span>back-end</span><span>&nbsp;</span><span>aspects</span><span>&nbsp;</span><span>of</span><span>&nbsp;</span>
-  <span>that</span><span>&nbsp;</span><span>that</span><span>&nbsp;</span><span>are</span><span>&nbsp;</span><span>essential</span><span>&nbsp;</span>
-  <span>essential</span><span>&nbsp;</span><span> to</span><span>&nbsp;</span><span>being</span><span>&nbsp;</span>a<span>stellar</span><span>&nbsp;</span>
-  <span>software</span><span>&nbsp;</span><span>developer.</span>
-</p>-->
+</html>
