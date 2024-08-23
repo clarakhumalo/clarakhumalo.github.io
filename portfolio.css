@@ -96,13 +96,13 @@ hr{
 
 
 .introduction h1 {
-  font-size: 4vw;
+  font-size: 3.5vw;
   position: absolute;
   gap: 0; 
   display: flex;
   margin-top: 3vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 25vw;
+  margin-right: 2.5vw;
   color: #ae7de3;
 }
 
@@ -144,9 +144,18 @@ hr{
 .introduction p {
   position: absolute;
   margin-top: 18vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: 25vw;
+  margin-right: 2.5vw;
   color: white;
+  font-size: 1.5vw;
+}
+.my-pic{
+  height: 48vh;
+  width: 20vw;
+  border-radius: 2vw;
+  /* margin-top: 18vh; */
+  margin-left: 2.5vw;
+  margin-top: 3vh;
 }
 
 .introduction p span {
@@ -183,8 +192,9 @@ hr{
   font-weight: bold;
   width: 25%;
   position: absolute;
-  margin-top: 40vh;
-  margin-left: 30vw; 
+  margin-top: 48vh;
+  margin-left: 2.5vw;
+  /* margin-left: 30vw;  */
   padding-top: 2vh;
   padding-bottom: 2vh;
   padding-right: 2vw;
@@ -201,9 +211,9 @@ hr{
 
 .skill-buttons {
   display: flex;
-  margin-top: 55vh;
-  margin-right: 20vw;
-  margin-left: 20vw;
+  margin-top: 40vh;
+  /* margin-right: 20vw; */
+  margin-left: 10vw;
 }
 
 .skill1, .skill2, .skill3, .skill4{
@@ -430,6 +440,13 @@ input[type=submit]:hover {
     padding-bottom: 3.3vh;
     padding-right: 3.3vw;
     padding-left: 3.3vw;
+  }
+
+  .my-pic{
+    height: 30vh;
+    border-radius: 4vw;
+    margin-top: 18vh;
+    margin-left: 2.5vw;
   }
 
   .introduction{
