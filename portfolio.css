@@ -454,8 +454,14 @@ input[type=submit]:hover {
   }
 
   .introduction p, .about p, .about ol {
-    font-size: 2.7vw;
+    font-size: 2.3vw;
+    /* margin-left: 10vw; */
   }
+  .introduction h1 {
+    font-size: 5vw;
+    margin-left: 10vw;
+  }
+
   .resume{
     padding-bottom: 1.3vh;
     padding-right: 1.3vw;
@@ -467,14 +473,20 @@ input[type=submit]:hover {
     padding-left: 1.5vw;
   }
 
-  .skill-buttons {
+  /* .skill-buttons {
     margin-right: 10vw;
     margin-left: 10vw;
   }
-  
+   */
+  .skill-buttons {
+    margin-top:50vh;
+    /* margin-bottom:; */
+    margin-left: 5vw;
+  }
+
   .skill1, .skill2, .skill3, .skill4{
       padding: 2vh 2vw;
-      font-size: 3vw;
+      font-size: 2vw;
   }
   .skill1:hover, .skill2:hover, .skill3:hover, .skill4:hover{
     padding-top: 2vh;
