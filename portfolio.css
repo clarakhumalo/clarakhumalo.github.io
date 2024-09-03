@@ -89,8 +89,7 @@ hr{
 .introduction{
   display: flex;
   position: absolute; 
-  background-color: rgb(87, 10, 159) ;  
-  opacity: 0.8; 
+  background-color: rgba(87, 10, 159, 0.7) ;  
   border-width: 0.5vw;  
   border-style: solid; 
   width: 80vw;
@@ -160,7 +159,6 @@ hr{
   height: 48vh;
   width: 20vw;
   border-radius: 2vw;
-  /* margin-top: 18vh; */
   margin-left: 2.5vw;
   margin-top: 3vh;
 }
@@ -294,8 +292,7 @@ th{
   border-style: solid;
   position: absolute; 
   color: white;
-  background-color: rgb(87, 10, 159) ;  
-  opacity: 0.8; 
+  background-color: rgba(87, 10, 159, 0.7) ;  
 }
 
 .about h1{
@@ -328,28 +325,21 @@ th{
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 80vw;
+  width: 55vw;
   height: auto;
-  margin-top: 20vh;
-  margin-right: 10vw;
-  margin-left: 10vw;
-  background-color: rgb(87, 10, 159) ;  
+  margin-top: 22.5vh;
+  margin-right: 22.5vw;
+  margin-left: 20vw;
+  background-color: rgba(87, 10, 159, 0.8) ;  
   border-image: linear-gradient(#ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5,rgb(88, 38, 126),rgb(87, 23, 137),#4c0b7d, #ae7de3,rgb(158, 98, 222),#9d51ef,#80589e, #6f29a5) 30;
   border-width: 0.5vw;  
   border-style: solid;
   color: white;
-  opacity: 0.8;   
-}
-
-.contact_form, .socials_and_contact_icons{
-  float: right;
-  box-sizing: border-box;
 }
 
 .socials_and_contact_icons {
-  width: 10%;
+  width: 5vw;
   margin-top: 5vh;
-  margin-left: 7%;
 }
 
 .contact_form  h2{
@@ -362,9 +352,10 @@ th{
 }
 
 .contact_form {
-  width: 35%; 
+  width: 30vw; 
   height: auto; 
   margin-bottom: 1vh;
+  margin-right: 3vw;
 }
 
 .contact-inputs{
@@ -376,7 +367,7 @@ th{
 }
 
 input , textarea{
-  width: 30vw; 
+  width: 20vw; 
   height: 5vh;
   padding: 1vh; 
   box-sizing: border-box; 
@@ -400,7 +391,8 @@ input[type=submit] {
   padding-bottom: 2vh;
   padding-right: 1vw;
   padding-left: 1vw;
-  margin-left: 4vw;
+  margin-right: 3vw;
+
   color: white;
   font-size: 1.5vw;
 }
