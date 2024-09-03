@@ -38,12 +38,15 @@ hr{
   text-align: center;
   border-width: 0.5vw;
   border-style: solid;
+  margin-left:0.5vw;
+  margin-right:0.5vw;
   /* border-radius: 5%; */
 }
 
 .nav-bar a.active {
   background-color: #4a0160;
   color: white;
+  font-size:1.7vw;
 }
 
 .nav-bar a:not(.active){
@@ -53,7 +56,11 @@ hr{
 
 .nav-bar a:hover {
   background-color: #4a0160;
-  font-size: 2.3vw;
+  /* font-size: 1.9vw; */
+  padding-top: 2.8vh;
+  padding-bottom: 2.8vh;
+  padding-right: 2.8vw;
+  padding-left: 2.8vw;
 }
 
 .starry_background {
