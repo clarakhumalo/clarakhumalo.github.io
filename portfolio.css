@@ -61,7 +61,7 @@ hr{
   height: 100%;
   /* background-image: url('assets/web-portfolio-bg.png'); */
   /* background-color: radial-gradient(center 50% 50%, radius 100%, #f0bfff, #e285ff,#d64eff,#c300ff,#9f00cf, #750099, #4a0160); */
-  background: linear-gradient(to right, #4a0160, #30003f);
+  background: linear-gradient(to right, #7b00a0,#4a0160, #30003f);
   background-size: cover;
   z-index: -1;
 }
