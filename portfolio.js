@@ -14,6 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+const slider = document.querySelector(".project-slider");
+const slides = document.querySelectorAll(".project-container-info");
+
+let index = 0;
+const slideCount = slides.length;
+
+function nextSlide() {
+    index = (index + 1) % slideCount;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(nextSlide, 3000);
+
+
 // let welcome=document.querySelector("welcome");
 // function animateCharacters(element){
 //     let spanCharacters=element.querySelectorAll("span");
