@@ -1,13 +1,13 @@
 html,body{
   margin: 0;
   padding: 0;
-  font-family: 'Amita';
-  font-weight: bold;
+  font-family: "Advent Pro", sans-serif;
+  /* font-weight: bold; */
   font-size: 1.7vw;
 }
 
 a { 
-  color: rgb(158, 77, 235);
+  color: rgb(255, 255, 255);
 }
 img{
   width: 50vw;

@@ -25,7 +25,7 @@ function nextSlide() {
     slider.style.transform = `translateX(-${index * 100}%)`;
 }
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 4700);
 
 
 // let welcome=document.querySelector("welcome");
