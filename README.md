@@ -23,7 +23,3 @@ Welcome to my personal portfolio website! Developed after completing a System De
 ## Challenges and Learnings:
 
 Throughout the development process, I encountered challenges such as ensuring cross-browser compatibility, optimizing performance and remaining dedicated to . By overcoming these hurdles, I gained valuable insights into troubleshooting techniques and best practices in web development.
-
-## Future Iterations:
-
-I will be expanding this portfolio website each time I add a project to my GitHub account or refining existing features. Future iterations may include integrating exploring advanced JavaScript functionalities to further enhance user interaction.
