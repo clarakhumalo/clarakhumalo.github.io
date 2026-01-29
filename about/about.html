@@ -1,79 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../portfolio.css">
-        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet"> -->
-        <!-- <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'> -->
-    </head>
-    <body>
-        <div class="starry_background" id="starry_background"></div>
-        <nav class="nav-bar">            
-            <a href="../index.html">Home</a>
-            <a class="active" href="../about/about.html">About</a>
-            <a href="../education-&-experience/education-&-experience.html">Education & Experience</a>
-            <a href="../contact-information/contact-info.html">Contact</a>
-        </nav>   
-        <div class="about">
-            <h1>About Me</h1>
-            <hr>
-                <p>
-                I was born and raised in Eldorado Park, Johannesburg, Gauteng, South Africa.
-                My interest in development began in 2020 when I learnt about an institution called WeThinkCode that provides individuals the
-                opportunity to study Systems Development. I recently completed my studies at WeThinkCode and
-                have since decided to strengthen my coding skills by learning languages and skills such as C# that weren't part of the curriculum at WeThinkCode.
-                <br>
-                <br>
-                Technical skills:
-                </p>
-                <ol>
-                    <li>
-                        Software Development Skills: 
-                        <ul>
-                            <li>Python (Advanced)</li>
-                            <li>Java (Advanced - including Database Management with SQLite)</li>
-                            <li>C# (Intermediate)</li>
-                            <li>Lua (Intermediate)</li>
-                        </ul>
-                    </li>
-                    <!-- <li>
-                        Database Management:
-                        <ul>
-                            <li>SQLite (Intermediate)</li>
-                        </ul>
-                    </li> -->
-                    <li>Web Development:
-                        <ul>
-                            <li>HTML, CSS, JavaScript (Intermediate)</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Android Development:
-                        <ul>
-                            <li>Flutter (Intermediate)</li>
-                        </ul>
-                    </li>
-                    <li>
-                        IDEs:
-                        <ul>
-                            <li>Visual Studio Code</li>
-                            <li>Intellij</li>
-                            <li>Visual Studio</li>
-                        </ul>
-                    </li> 
-                </ol>
-                <p>
-                My soft skills include good team work and great ability to work independently.
-                <br>
-                Apart from my educational pursuits, I am currently a part-time programming tutor with Ambassador status on the Superprof platform.
-                <br>
-                </p>
-            </div>
-        </div>
 
-        <script src="../portfolio.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet"> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'> -->
+</head>
+
+<body>
+    <div class="starry_background" id="starry_background"></div>
+    <nav class="nav-bar">
+        <a href="../index.html">Home</a>
+        <a class="active" href="../about/about.html">About</a>
+        <a href="../education-&-experience/education-&-experience.html">Education & Experience</a>
+        <a href="../contact-information/contact-info.html">Contact</a>
+    </nav>
+    <div class="about">
+        <h1>About Me</h1>
+        <p>
+            I am currently a part-time BCS student at University of The People. I began my software development journey
+            in 2022 in preparation for bootcamp assements at WeThinkCode where I achieved a national certificate in
+            Information Technology: Systems Engineering.
+            <br><br>
+            My soft skills include being good team work as well as great ability to work independently.
+            Apart from my educational pursuits, I am currently a part-time programming tutor with Ambassador status on
+            the Superprof platform.
+            <br>
+            <br>
+
+            Technical skills:
+        </p>
+        <ol>
+            Software Development:
+            <ul>
+                <table class="skills">
+                    <tr>
+                        <td>
+                            <li>Python</li>
+                        </td>
+                        <td>
+                            <li>Java</li>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <li>C#</li>
+                        </td>
+                        <td>
+                            <li>Lua</li>
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+            <br>
+            Database Management:
+            <ul>
+                <table class="skills">
+                    <tr>
+                        <td>
+                            <li>SQLite</li>
+                        </td>
+                        <td>
+                            <li>MQSql</li>
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+            <br>
+            Web Development:
+            <ul>
+                <table class="skills">
+                    <tr>
+                        <td>
+                            <li>HTML, CSS, JavaScript & Django</li>
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+            <br>
+            Android Development:
+            <ul>
+                <table class="skills">
+                    <tr>
+                        <td>
+                            <li>Flutter</li>
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+            <br>
+            IDEs:
+            <ul>
+                <table class="skills">
+                    <tr>
+                        <td>
+                            <li>Visual Studio Code</li>
+                        </td>
+                        <td>
+                            <li>Intellij</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li>Visual Studio</li>
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+        </ol>
+    </div>
+    <div class="skill-buttons" id="gradient-border">
+        <a href="java-projects/java-projects.html">
+            <button class="skill2">
+                Java Projects
+            </button>
+        </a>
+
+        <a href="python-projects/python-projects.html">
+            <button class="skill1">
+                Python Projects
+            </button>
+        </a>
+
+        <a href="website-projects/web-projects.html">
+            <button class="skill3">
+                Web Projects
+            </button>
+        </a>
+    </div>
+    <script src="../portfolio.js"></script>
+</body>
+
 </html>

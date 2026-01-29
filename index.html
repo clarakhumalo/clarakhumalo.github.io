@@ -3,15 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Portfolio</title>
+  <meta full-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clara Khumalo</title>
   <link rel="stylesheet" href="portfolio.css">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Advent+Pro" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet"> -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'> -->
 </head>
 
 <body>
@@ -22,120 +20,24 @@
     <a href="education-&-experience/education-&-experience.html">Education & Experience</a>
     <a href="contact-information/contact-info.html">Contact</a>
   </nav>
-
-  <div class="slides">
-    <div class="introduction">
-      <h1 class="welcome">
-        <span>W</span>
-        <span>e</span>
-        <span>l</span>
-        <span>c</span>
-        <span>o</span>
-        <span>m</span>
-        <span>e</span>
-        <span>&nbsp;</span>
-        <span>t</span>
-        <span>o</span>
-        <span>&nbsp;</span>
-        <span>m</span>
-        <span>y</span>
-        <span>&nbsp;</span>
-        <span>P</span>
-        <span>e</span>
-        <span>r</span>
-        <span>s</span>
-        <span>o</span>
-        <span>n</span>
-        <span>a</span>
-        <span>l</span>
-        <span>&nbsp;</span>
-        <span>W</span>
-        <span>e</span>
-        <span>b</span>
-        <span>&nbsp;</span>
-        <span>P</span>
-        <span>o</span>
-        <span>r</span>
-        <span>t</span>
-        <span>f</span>
-        <span>o</span>
-        <span>l</span>
-        <span>i</span>
-        <span>o</span>
-      </h1>
-      <script>
-        let welcome = document.querySelector(".welcome");
-        function animateCharacters(element) {
-          let spanCharacters = element.querySelectorAll("span");
-
-          for (let counter = 0; counter < spanCharacters.length; counter++) {
-            let spanCharacter = spanCharacters[counter];
-            let randomDuration = .2 + Math.random() + 1;
-            spanCharacter.style.setProperty("--duration", randomDuration + "s");
-          }
-          setColorProcess(spanCharacters);
-          welcome.addEventListener("animationiteration", changeColor, true);
-        }
-        animateCharacters(welcome);
-
-        function setColorProcess(spanCharacters) {
-          for (let counter = 0; counter < spanCharacters.length; counter++) {
-            let spanCharacter = spanCharacters[counter];
-            spanCharacter.style.setProperty("--colorA", "--colorB ");
-            spanCharacter.style.setProperty("--colorB", "--colorC");
-            spanCharacter.style.setProperty("--colorC", "--colorD");
-          }
-        }
-        function changeColor(event) {
-          let spanCharacter = event.target;
-          let spanStyle = getComputedStyle(spanCharacter);
-          spanCharacter.style.setProperty("--colorA", "--colorB");
-          spanCharacter.style.setProperty("--colorB", "--colorC");
-          spanCharacter.style.setProperty("--colorC", "--colorD");
-        }
-      </script>
-      <br>
-
-      <p><span>My name is Clara,
-          I recently graduated from an institution that trained me to
-          work with both the front-end and back-end aspects of programming, as well as
-          many soft skills that are essential to being a stellar software developer.</span>
-      </p>
-      <button class="resume" id="rounded-border">
-        <a href="assets/Clara_Khumalo_CV.pdf" download>Download Resume</a>
-      </button>
-      <br>
-
-      <div class="skill-buttons" id="gradient-border">
-        <a href="python-projects/python-projects.html">
-          <button class="skill1">
-            Python<br>Projects
-          </button>
-        </a>
-        <a href="java-projects/java-projects.html">
-          <button class="skill2">
-            Java<br>Projects
-          </button>
-        </a>
-
-        <a href="website-projects/web-projects.html">
-          <button class="skill3">
-            Web<br>Projects
-          </button>
-        </a>
-
-        <!-- <a href="application-projects/application-projects.html">
-          <button class="skill4">
-            Flutter<br>Apps
-          </button>
-        </a> -->
-
+  <div class="content">
+    <h1 id="full-name"> CLARA KHUMALO</h1>
+    <h3 id="title">{SOFTWARE DEVELOPER}</h3>
+    <p id="introduction">I'm an early-career software developer who loves learning new technologies and building projects that help me grow. I
+    have experience with programming fundamentals, web development, and tools like GitHub, and I'm constantly expanding my
+    skills through self-driven projects and coursework.
+    </p>
+    <div class="home-links">
+      <div class="home-github-linkedin">
+        <p id="home-github"><a href="https://github.com/clarakhumalo">GITHUB</a></p>
+        <p id="home-linkedin"><a href="https://www.linkedin.com/in/clara-juana-khumalo/">LINKEDIN</a></p>
       </div>
+      <p id="home-email"><a href="mailto:clarakhumalo14@gmail.com">CLARAKHUMALO14@gmail.com</a></p>
     </div>
+
   </div>
 
-
-
+  <img id="home-image" src="assets/clara-khumalo-graduation-pic.jpg">
   </div>
   <script src="portfolio.js"></script>
 </body>
